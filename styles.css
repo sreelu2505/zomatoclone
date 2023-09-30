@@ -432,3 +432,50 @@
 .footer__link:hover{
     color: black;
 }
+
+.social__links_container button{
+    color: white;
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.social__links_container i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__section_logos{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 95%;
+    margin: auto;
+    color: gray;
+    border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
